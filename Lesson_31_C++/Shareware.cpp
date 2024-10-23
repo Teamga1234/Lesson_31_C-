@@ -45,3 +45,16 @@ bool Shareware::isAvailable() const
 {
     return (install + days) >= Date();
 }
+
+void Shareware::load(ifstream& file)
+{
+    getline(file, name);
+    getline(file, manufacture);
+    int d, m, y;
+    file >> d >> m >> y;
+    install.setYear(y);
+    install.setMonth(m);
+    install.setDay(d);
+    file >> days;
+
+}

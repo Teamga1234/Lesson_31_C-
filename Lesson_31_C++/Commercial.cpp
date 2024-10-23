@@ -30,3 +30,9 @@ void Commercial::showInfo() const
     cout << "Price: " << price << endl;
     cout << "Is available: " << (isAvailable() ? "yes" : "no") << endl;
 }
+
+void Commercial::load(ifstream& file)
+{
+    Shareware::load(file);
+    file >> price;
+}

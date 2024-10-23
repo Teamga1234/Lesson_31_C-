@@ -13,5 +13,7 @@ public:
 	float getPrice()const;
 
 	void showInfo()const override;
+	void load(ifstream& file) override;
+
 };
 

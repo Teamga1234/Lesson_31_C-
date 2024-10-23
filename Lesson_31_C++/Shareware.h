@@ -19,5 +19,6 @@ public:
 	void showInfo()const override;
 	bool isAvailable() const override;
 
+	void load(ifstream& file) override;
 };
 

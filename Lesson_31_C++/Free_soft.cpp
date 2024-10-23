@@ -23,3 +23,10 @@ bool Free_soft::isAvailable() const
 {
     return true;
 }
+
+void Free_soft::load(ifstream& file)
+{
+    getline(file, name);
+    getline(file, manufacture);
+
+}
