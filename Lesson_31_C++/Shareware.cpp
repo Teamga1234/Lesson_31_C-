@@ -43,5 +43,5 @@ void Shareware::showInfo() const
 
 bool Shareware::isAvailable() const
 {
-    return install + days >= Date();
+    return (install + days) >= Date();
 }
