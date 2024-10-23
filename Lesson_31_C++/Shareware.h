@@ -17,6 +17,7 @@ public:
 	Date getInstall()const;
 	int getDays()const;
 	void showInfo()const override;
+	bool isAvailable() const override;
 
 };
 
