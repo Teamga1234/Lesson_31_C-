@@ -11,15 +11,21 @@ Admin::Admin()
 			getline(file, type);
 			if (type == "Free")
 			{
-
+				Soft* obj = new Free_soft();
+				obj->load(file);
+				admin.push_back(obj);
 			}
 			else if (type == "ShareWare")
 			{
-
+				Soft* obj = new Shareware();
+				obj->load(file);
+				admin.push_back(obj);
 			}
 			else if (type == "Commercial")
 			{
-
+				Soft* obj = new Commercial();
+				obj->load(file);
+				admin.push_back(obj);
 
 			}
 		}
