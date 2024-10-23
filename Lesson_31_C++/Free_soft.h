@@ -9,6 +9,5 @@ public:
 	void showInfo() const override;
 	bool isAvailable() const override;
 
-	
 };
 
