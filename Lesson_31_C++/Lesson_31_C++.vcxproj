@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Free_soft.cpp" />
     <ClCompile Include="Lesson_31_C++.cpp" />
     <ClCompile Include="Soft.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Free_soft.h" />
     <ClInclude Include="Soft.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
