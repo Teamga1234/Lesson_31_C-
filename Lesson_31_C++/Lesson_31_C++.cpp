@@ -1,16 +1,12 @@
-﻿#include "Free_Soft.h"
-#include "Shareware.h"
-#include "Date.h"
-#include "Commercial.h"
+﻿#include "Admin.h"
 
 int main()
 {
-	Free_soft a("spotify", "Spotify Technology S.A.");
-	a.showInfo();
-	cout << endl;
-	Shareware b("spotify", "Spotify Technology S.A.", Date(23, 10, 2024)- 20, 10);
-	b.showInfo();
-	Commercial c("spotify", "Spotify Technology S.A.", Date(23, 10, 2024), 10, 100);
-	cout << endl;
-	c.showInfo();
+	Admin itStep;
+	itStep.addSoft(new Free_soft("spotify", "Spotify Technology S.A."));
+	itStep.addSoft(new Shareware("spotify", "Spotify Technology S.A.", Date(23, 10, 2024) - 20, 10));
+	itStep.addSoft(new Commercial("spotify", "Spotify Technology S.A.", Date(23, 10, 2024), 50, 100));
+	
+	itStep.showList();
+
 }
