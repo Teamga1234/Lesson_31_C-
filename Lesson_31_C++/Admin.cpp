@@ -2,6 +2,31 @@
 
 Admin::Admin()
 {
+	ifstream file("info-soft.txt");
+	if (file.is_open())
+	{
+		string type = "";
+		while (!file.eof())
+		{
+			getline(file, type);
+			if (type == "Free")
+			{
+
+			}
+			else if (type == "ShareWare")
+			{
+
+			}
+			else if (type == "Commercial")
+			{
+
+
+			}
+		}
+		file.close();
+	}
+	else
+		cout << "\nerror\n";
 }
 
 Admin::~Admin()
