@@ -10,5 +10,7 @@ int main()
 	cout << endl;
 	Shareware b("spotify", "Spotify Technology S.A.", Date(23, 10, 2024)- 20, 10);
 	b.showInfo();
-	Commercial c();
+	Commercial c("spotify", "Spotify Technology S.A.", Date(23, 10, 2024), 10, 100);
+	cout << endl;
+	c.showInfo();
 }
