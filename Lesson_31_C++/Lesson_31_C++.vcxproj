@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Commercial.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="Free_soft.cpp" />
     <ClCompile Include="Lesson_31_C++.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="Soft.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Commercial.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="Free_soft.h" />
     <ClInclude Include="Shareware.h" />

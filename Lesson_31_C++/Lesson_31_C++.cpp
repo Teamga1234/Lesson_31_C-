@@ -1,6 +1,7 @@
 ﻿#include "Free_Soft.h"
 #include "Shareware.h"
 #include "Date.h"
+#include "Commercial.h"
 
 int main()
 {
@@ -9,4 +10,5 @@ int main()
 	cout << endl;
 	Shareware b("spotify", "Spotify Technology S.A.", Date(23, 10, 2024)- 20, 10);
 	b.showInfo();
+	Commercial c();
 }
