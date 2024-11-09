@@ -16,7 +16,7 @@ Admin::Admin()
 				admin.push_back(obj);
 			}
 			else if (type == "ShareWare")
-			{
+			{ 
 				Soft* obj = new Shareware();
 				obj->load(file);
 				admin.push_back(obj);
